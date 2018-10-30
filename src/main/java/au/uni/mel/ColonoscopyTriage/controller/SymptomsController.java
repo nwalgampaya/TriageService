@@ -31,9 +31,9 @@ public class SymptomsController {
 		IFOBT ifobt = symptoms.getIfobt();
 		
 		
-		
-		if(ifobt.isIspositiveIFOBT() && ifobt.isNBCSPOrOther()) {
-			
-		}
+//		
+//		if(ifobt.isIspositiveIFOBT() && ifobt.isNBCSPOrOther()) {
+//			
+//		}
 	}
 }

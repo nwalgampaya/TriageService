@@ -6,5 +6,7 @@ import au.uni.mel.ColonoscopyTriage.model.IFOBT;
 
 public interface IFOBTRepository extends CrudRepository<IFOBT, Integer>{
 	
+//	@Query(value = "select * from ifobt")
+//	Iterable<IFOBT> findAllifobt();
 
 }

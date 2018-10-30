@@ -12,33 +12,42 @@ import javax.persistence.Table;
 public class IFOBT {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	
-	@Column(name="positiveifobt")
+
+	@Column(name = "positiveifobt")
 	private boolean positiveIFOBT;
-	
-	@Column(name="nbcsporother")
+
+	@Column(name = "nbcsporother")
 	private boolean NBCSPOrOther;
-	
-	
-	public boolean isIspositiveIFOBT() {
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public boolean isPositiveIFOBT() {
 		return positiveIFOBT;
 	}
-	public void setpositiveIFOBT(boolean positiveIFOBT) {
+
+	public void setPositiveIFOBT(boolean positiveIFOBT) {
 		this.positiveIFOBT = positiveIFOBT;
 	}
+
 	public boolean isNBCSPOrOther() {
 		return NBCSPOrOther;
 	}
+
 	public void setNBCSPOrOther(boolean nBCSPOrOther) {
 		NBCSPOrOther = nBCSPOrOther;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "IFOBT [ispositiveIFOBT=" + positiveIFOBT + ", NBCSPOrOther=" + NBCSPOrOther + "]";
 	}
-	
-	
+
 }
